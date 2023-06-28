@@ -1,0 +1,106 @@
+$background-color: #f4f4f4;
+$link-color: #888;
+$link-hover-color: #ddd;
+$active-link-bg-color: #d42121;
+$active-link-color: white;
+$logo-width: 100px;
+$logo-height: 60px;
+
+.navbar {
+    background-color: $background-color;
+    overflow: hidden;
+    width: 100%;
+  
+    img {
+      float: left;
+      padding: 8px;
+      width: $logo-width;
+      height: $logo-height;
+    }
+  
+    a {
+      float: left;
+      color: $link-color;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  
+      &:hover {
+        background-color: $link-hover-color;
+        color: black;
+      }
+  
+      &.active {
+        background-color: $active-link-bg-color;
+        color: $active-link-color;
+      }
+    }
+  }
+  
+  body {
+    padding: 16px;
+  }
+
+  //Header Part//
+
+$headline-bg-color: #f9f9f9;
+$headline-font-size: 24px;
+$headline-font-family: 'Arial';
+$headline-font-style: 'Italic';
+$headline-margin-bottom: 10px;
+$headline-description-font-size: 18px;
+$headline-description-margin-bottom: 20px;
+$button-padding: 10px 20px;
+$button-font-family: 'Impact'; 
+$button-margin: 0 10px;
+$button-font-size: 16px;
+$button-border-radius: 5px;
+$button-transition: background-color 0.3s ease;
+
+.Headline {
+  background-color: $headline-bg-color;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: $headline-font-size;
+    margin-bottom: $headline-margin-bottom;
+    font-family: $headline-font-family;
+  }
+
+  p {
+    font-size: $headline-description-font-size;
+    margin-bottom: $headline-description-margin-bottom;
+    font-family: $headline-font-family;
+    font-style: $headline-font-style
+  }
+
+  .button {
+    display: inline-block;
+    padding: $button-padding;
+    margin: $button-margin;
+    font-size: $button-font-size;
+    font-family: $button-font-family;
+    color: rgb(10, 6, 6);
+    text-decoration: none;
+    border-radius: $button-border-radius;
+    transition: $button-transition;
+
+    &.blue-button {
+      background-color: blue;
+    }
+
+    &.orange-button {
+      background-color: orange;
+    }
+
+    &.green-button {
+      background-color: green;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
